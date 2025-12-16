@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: 'Quicksand' , sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+/* Utility Classes */
+
+.primary-text {
+    color: #d53da5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary {
+    color: #ffffff;
+    border: 1px solid#742f66;
+}
+.btn-secondary {
+    color: #fff;
+    background: #742f66;
+    margin-top: 2rem;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: rgb(242, 255, 0);
+}
+
+/* Header Start */
+header {
+    height: 100vh;
+    background: url('./flowers/Flower\ Love_\ Photo.jpg') center center/cover no-repeat;
+    position: relative;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+#navbar img {
+    width: 80px;
+    margin-left: 100px;
+}
+
+
+
+#navbar ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+#navbar ul li a {
+    padding: 15px 20px;
+    color: white;
+    font-weight: 700;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px solid #e4b95b;
+
+}
+
+
+
+
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+header .content h1 {
+    font-size: 40px;
+    color: #fff;
+
+}
+header .content p{
+    margin: 20px 0 40px;
+    color: #fff;
+
+}
+header::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.6);
+}
+header * {
+    z-index: 10;
+}
+/* Header End */
+
+/* About Start */
+
+#about  {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+#about .title,
+#offers .title,
+#flower .title {
+
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+#about h2,
+#offers h2, 
+#flower h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+#about h2,
+#flower h2 {
+    color: #9240a8;
+}
+#about .title p,
+#offers .title,
+#flower .title p {
+    font-size: 14px;
+    color: #2f6c3f;
+    font-weight: 600;
+}
+
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#about .about-content img{
+    width: 200px;
+}
+#about .about-content p{
+    color: #9a9a9a;margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+/* About End */
+
+
+/* Offers Start */
+#offers{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./flowers/وردة.png) center center/cover fixed;
+}
+
+#offers .container {
+    width: 100%;
+}
+
+#offers h2 {
+    color: rgb(210, 116, 191); 
+    text-align: center;
+}
+
+#offers .title p {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+#offers .offers-items {
+    display: flex;
+    justify-content: center;
+    gap: 60px;             
+    text-align: center;
+    flex-wrap: wrap;       
+}
+
+
+#offers .offer-item {
+    width: 300px;
+}
+
+
+#offers .offer-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+
+#offers .offer-item h3 {
+    font-size: 26px;
+    color: rgb(210, 116, 191);
+    margin-bottom: 10px;
+}
+
+
+#offers .offer-item p {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+#offers .offer-item span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffb6e1;
+}
+
+    
+
+
+
+/* Offer End */
+
+
+/* Flower Start */
+
+/* Flower Start */
+#flower {
+    background: hsl(316, 100%, 93%);
+    padding: 5rem 0;
+}
+
+#flower .flower-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+#flower .flower-items > div {
+    width: 50%;
+}
+
+
+#flower .flower-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+#flower .flower-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+#flower .flower-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #383848;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+
+#flower .flower-item span {
+    color: #e91e63;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+#flower .flower-item p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 14px;
+}
+
+
+#flower .btn {
+    display: block;
+    margin:  20px auto 0;
+    background: #4e1a4e;
+    color: #fff;
+    cursor: pointer;
+}
+#flower .btn:hover {
+    background: #e91e63;
+}
+/* Flower End */
+
+
+
+/* Flower End */
+
+/* Contact Start */
+/* Contact Start */
+#contact {
+  background: #fff;
+  padding: 5rem 0;
+}
+
+#contact .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contact h2 {
+  color: #e91e63;
+}
+
+#contact .title p {
+  color: #555;
+}
+
+/* Layout */
+#contact .contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Info */
+#contact .contact-info {
+  width: 40%;
+  font-size: 15px;
+  color: #383848;
+}
+
+#contact .contact-info p {
+  margin-bottom: 12px;
+}
+
+#contact .contact-info i {
+  color: #e91e63;
+  margin-right: 8px;
+}
+
+#contact .contact-info h3 {
+  margin: 25px 0 10px;
+  color: #383848;
+}
+
+#contact .contact-info i {
+  color: #e91e63;
+  margin-right: 8px;
+}
+#contact .contact-info a i:hover {
+  background: #e91e63;
+}
+
+/* Form */
+#contact .contact-form {
+  width: 55%;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  outline: none;
+  border-color: #e91e63;
+}
+
+/* Button */
+#contact .btn {
+  background: #e91e63;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#contact .btn:hover {
+  background: #d81b60;
+}
+/* Contact End */
+
+/* Contact End */
+
+
